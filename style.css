@@ -1,0 +1,149 @@
+/* Jeffrey Phelps DU Web Dev Bootcamp Week 3 Homework Hangman Game */
+
+body {
+    background-color: darkblue;
+    color: #ffffff;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/* BEGIN MAIN CONTAINER */
+
+#container {
+    min-width: 460px;
+}
+
+/* END MAIN CONTAINER */
+
+
+/* BEGIN HEADER */
+
+#header {
+    margin-top: 20px;
+}
+
+#titleBox {
+    text-align: center;
+    border: dashed 2px #ffffff;
+}
+
+#titleText {
+    font-family: sans-serif;
+    font-size: 150px;
+    font-weight: bolder;
+    margin-top: -40px;
+    margin-bottom: -50px;
+    text-shadow: 0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0,0,0,.1),
+        0 0 5px rgba(0,0,0,.1),
+        0 1px 3px rgba(0,0,0,.3),
+        0 3px 5px rgba(0,0,0,.2),
+        0 5px 10px rgba(0,0,0,.25),
+        0 10px 10px rgba(0,0,0,.2),
+        0 20px 20px rgba(0,0,0,.15);
+
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), color-stop(50%, rgba(0,0,139,.8)), to(rgba(0,0,0,1)));
+}
+
+#titleSubText {
+    display: inline;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 39px;
+    color: orangered;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), color-stop(50%, rgba(0,0,139,.7)), to(rgba(0,0,0,1)));
+    text-shadow: 0 1px 0 #ffffff;
+}
+
+#football1 {
+    display: inline;
+    height: 50px;
+    width: 50px;
+    margin-top: -15px;
+}
+
+#football2 {
+    display: inline;
+    height: 50px;
+    width: 50px;
+    margin-top: -15px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}
+
+/* END HEADER */
+
+
+/* BEGIN MAIN CONTENT */
+
+#mainContent {
+    margin-top: 20px;
+}
+
+#mainBox {
+    height: 500px;
+    border: dashed 1px #ffffff;
+    background-image: url("./images/field.png");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    
+}
+
+#innerBox {
+    margin: 40px auto;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    color: darkblue;
+    font-weight: bold;
+}
+
+#right {
+    color: orangered;
+    font-size: 44px;
+}
+
+#sub {
+    font-size: 20px;
+    color: orangered;
+}
+
+#sub2 {
+    color: darkblue;
+}
+
+h4 {
+    color: orangered;
+    padding-bottom: 50px;
+}
+
+/* END MAIN CONTENT */
+
+
+/* BEGIN STICKY FOOTER */
+
+#footerBox {
+    margin-top: 30px;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: orangered;
+    color: darkblue;
+    text-align: center;
+    font-size: smaller;
+}
+
+#footer p {
+    padding: 23px;
+}
+
+/* END STICKY FOOTER */

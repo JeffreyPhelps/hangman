@@ -1,0 +1,79 @@
+
+<!--  Jeffrey Phelps DU Web Dev Bootcamp Week 3 Homework Hangman Game  -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>NFL Quarterback Hangman</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- MAIN CONTAINER -->
+  <div class="container-fluid" id="container">
+
+    <!-- Header Row -->
+    <div class="row" id="header">
+
+      <div class="col-lg-2" id="titleSpacer"></div>
+
+      <div class="col-med-12 col-lg-8" id="titleBox">
+          <div id="titleText">HANGMAN</div>
+          <img src="images/football.png" id="football1" />
+          <div id="titleSubText">NFL QUARTERBACK GREATS</div>
+          <img src="images/football.png" id="football2" />
+      </div>
+
+    </div>
+
+    <!-- Main Content Row -->
+    <div class="row" id="mainContent">
+
+        <div class="col-lg-2" id="mainSpacer"></div>
+
+        <div class="col-lg-8" id="mainBox">
+            <div id="innerBox">
+              <br><h1>Guess the Quarterback Great<br><small id="sub">Type any letter to get started...</small></h1><br>
+              <h3>Quarterback <small id="sub2">(last name):</small><br><p id="right"></p></h3><br><br>
+              <p><span id="remain">11</span> incorrect guesses remain</p>
+              <h4>Incorrect Letters:<p id="wrong"></p></h4>
+              <script src="script.js"></script>
+            </div>
+        </div>
+
+    </div>
+  
+  </div>
+  <!-- END MAIN CONTAINER -->
+    
+  <!-- BEGIN FOOTER -->
+
+  <div id="footerBox">
+      
+    <div id="footer">
+      <p>© Copyright Jeffrey Phelps 2017</p>
+    </div>
+
+  </div>
+
+  <!-- END FOOTER -->
+
+
+  <!-- Remote jQuery, javascript file for the Bootstrap's javascript file to function -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</body>
+
+</html>
