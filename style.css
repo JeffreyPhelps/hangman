@@ -6,21 +6,6 @@ body {
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-#backLink {
-    float: left;
-    top: 10px;
-    margin: 10px;
-}
-
-#backLinkText {
-    padding: 5px;
-    border: 1px solid orangered;
-    background-color: #ffffff;
-    color: darkblue;
-    font-weight: bold;
-    text-decoration: none;
-}
-
 
 /* BEGIN MAIN CONTAINER */
 
