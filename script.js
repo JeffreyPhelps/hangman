@@ -79,7 +79,7 @@ var game = {
     if (this.$right.innerHTML.indexOf('_') < 0) {
       myAudio3.play();
       this.complete = true;
-      alert('you win! The QB was: ' + this.word);
+      alert('YOU WIN! The QB was: ' + this.word);
     }
   },
 
@@ -95,7 +95,7 @@ var game = {
       myAudio5.pause();
       myAudio4.play();
       this.complete = true;
-      alert('you lose! The QB was: ' + this.word);
+      alert('YOU LOSE! The QB was: ' + this.word);
     }
   }
 };
