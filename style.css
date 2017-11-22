@@ -6,6 +6,22 @@ body {
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+#backLink {
+    float: left;
+    top: 10px;
+    margin: 10px;
+}
+
+#backLinkText {
+    padding: 5px;
+    border: 1px solid orangered;
+    background-color: #ffffff;
+    color: darkblue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
 /* BEGIN MAIN CONTAINER */
 
 #container {
@@ -105,9 +121,18 @@ body {
     font-weight: bold;
 }
 
+#buttons {
+    float: right;
+}
+
+h1 {
+    font-weight: bold;
+}
+
 #right {
     color: orangered;
     font-size: 44px;
+    padding: 5px;
 }
 
 #sub {

@@ -26,7 +26,9 @@
     <!-- Header Row -->
     <div class="row" id="header">
 
-      <div class="col-lg-2" id="titleSpacer"></div>
+      <div class="col-lg-2" id="titleSpacer">
+          <a href="http://www.phelpscode.com/portfolio.html" id="backLink"><span id="backLinkText"> << Back to PhelpsCode.com</span></a>
+      </div>
 
       <div class="col-med-12 col-lg-8" id="titleBox">
           <div id="titleText">HANGMAN</div>
@@ -44,6 +46,10 @@
 
         <div class="col-lg-8" id="mainBox">
             <div id="innerBox">
+              <div id="buttons">
+                <input type="button" value="PAUSE" id="musicButton" class="button"></input>
+                <input type="button" value="RESET" id="resetButton" class="button"></input>
+              </div>
               <br><h1>Guess the Quarterback Great!<br><small id="sub">Type any letter to get started...</small></h1><br>
               <h3>Quarterback <small id="sub2">(last name):</small><br><p id="right"></p></h3><br><br>
               <p><span id="remain">11</span> incorrect guesses remain</p>

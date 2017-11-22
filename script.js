@@ -1,5 +1,13 @@
 // Jeffrey Phelps DU Web Dev Bootcamp Week 3 Homework Hangman Game
 
+var bkgrndMusic = []
+bkgrndMusic.push("./audio/nflmusic1.mp3");
+bkgrndMusic.push("./audio/nflmusic2.mp3");
+bkgrndMusic.push("./audio/nflmusic3.mp3");
+bkgrndMusic.push("./audio/nflmusic4.mp3");
+bkgrndMusic.push("./audio/nflmusic5.mp3");
+bkgrndMusic.push("./audio/nflmusic6.mp3");
+bkgrndMusic.push("./audio/nflmusic7.mp3");
 
 var myAudio1 = document.createElement("audio");
 myAudio1.src = "./audio/rightletter.mp3";
@@ -14,7 +22,7 @@ var myAudio4 = document.createElement("audio");
 myAudio4.src = "./audio/youlose.mp3";
 
 var myAudio5 = document.createElement("audio");
-myAudio5.src = "./audio/nflmusic.mp3";
+myAudio5.src = bkgrndMusic[Math.floor(Math.random() * bkgrndMusic.length)];
 
 var words = ["ELWAY", "MONTANA", "BRADY", "BRADSHAW", "CUNNINGHAM", "RODGERS", 
   "MOON", "NAMATH", "STARR", "MANNING", "UNITAS", "MARINO", "YOUNG", "KELLY", 
@@ -28,6 +36,7 @@ var game = {
   guessed: [],
   left: 11,
   start: function() {
+    myAudio2.play();
     myAudio5.play();
     this.complete = false;
     this.word = words[Math.floor(Math.random() * words.length)];
@@ -83,4 +92,13 @@ game.start();
 document.onkeyup = function(event) {
   var letter = String.fromCharCode(event.keyCode).toUpperCase();
   game.guess(letter);
+};
+
+document.getElementById("musicButton").onclick = function() {
+  myAudio5.pause();
+  myAudio3.pause();
+};
+
+document.getElementById("resetButton").onclick = function() {
+  window.location.reload();
 };
