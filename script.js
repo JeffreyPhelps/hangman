@@ -1,4 +1,7 @@
+
 // Jeffrey Phelps DU Web Dev Bootcamp Week 3 Homework Hangman Game
+
+// Setting up the audio and background music
 
 var bkgrndMusic = []
 bkgrndMusic.push("./audio/nflmusic1.mp3");
@@ -24,6 +27,8 @@ myAudio4.src = "./audio/youlose.mp3";
 var myAudio5 = document.createElement("audio");
 myAudio5.src = bkgrndMusic[Math.floor(Math.random() * bkgrndMusic.length)];
 
+// Setting up the QBs array
+
 var words = ["ELWAY", "MONTANA", "BRADY", "BRADSHAW", "CUNNINGHAM", "RODGERS", 
   "MOON", "NAMATH", "STARR", "MANNING", "UNITAS", "MARINO", "YOUNG", "KELLY", 
   "STAUBACH", "TARKENTON", "BREES", "AIKMAN", "FAVRE", "FOUTS", "STABLER", 
@@ -31,6 +36,8 @@ var words = ["ELWAY", "MONTANA", "BRADY", "BRADSHAW", "CUNNINGHAM", "RODGERS",
   "PLUNKETT", "ESIASON", "SIMMS", "TITTLE", "VANBROCKLIN", "ELWAY", 
   "ANDERSON", "DAWSON", "JURGENSEN", "LUCKMAN", "BLANDA", "JAWORSKI", 
   "BLEDSOE", "MCNAIR", "MORRALL", "LAYNE", "GABRIEL", "GRIESE", "MCNABB"];
+
+// Initialize game
       
 var game = {
   guessed: [],
@@ -46,6 +53,8 @@ var game = {
     this.$right.innerHTML = '_'.repeat(this.word.length);
   },
   
+  // Guess a letter
+  
   guess: function(letter) {
     if (this.left > 0 && this.complete != true) {
       if (this.word.indexOf(letter) > -1 || this.guessed.indexOf(letter) > -1) {
@@ -55,6 +64,8 @@ var game = {
       }
     }
   },
+
+  // If letter guessed is correct
   
   right: function(letter) {
     for(var i = 0; i < this.word.length; i++) {
@@ -71,6 +82,8 @@ var game = {
       alert('you win! The QB was: ' + this.word);
     }
   },
+
+  // If letter guesses is incorrect
   
   wrong: function(letter) {
     myAudio2.play();
@@ -87,17 +100,25 @@ var game = {
   }
 };
 
+// Start the game
+
 game.start();
+
+// Convert all guessed letters to caps
 
 document.onkeyup = function(event) {
   var letter = String.fromCharCode(event.keyCode).toUpperCase();
   game.guess(letter);
 };
 
+// Pause audio button
+
 document.getElementById("musicButton").onclick = function() {
   myAudio5.pause();
   myAudio3.pause();
 };
+
+// Reset game button
 
 document.getElementById("resetButton").onclick = function() {
   window.location.reload();

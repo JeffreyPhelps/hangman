@@ -1,3 +1,4 @@
+
 /* Jeffrey Phelps DU Web Dev Bootcamp Week 3 Homework Hangman Game */
 
 body {
@@ -10,7 +11,7 @@ body {
 /* BEGIN MAIN CONTAINER */
 
 #container {
-    min-width: 460px;
+    min-width: 580px;
 }
 
 /* END MAIN CONTAINER */
@@ -157,3 +158,44 @@ h4 {
 }
 
 /* END STICKY FOOTER */
+
+/* ************************* */
+
+/* BEGIN RESPONSIVE CHANGES */
+
+@media screen and (max-width:808px) {
+
+    #titleText {
+        padding-top: 15px;
+        padding-bottom: 20px;
+        font-size: 93px;
+    }
+
+    #titleSubText {
+        padding-top: 25px;
+        font-size: 25px;
+    }
+
+    #football1 {
+        height: 25px;
+        width: 25px;
+        margin-top: 0px;
+    }
+
+    #football2 {
+        height: 25px;
+        width: 25px;
+        margin-top: 0px;
+    }
+
+}
+
+@media screen and (max-width:808px) {
+
+    #secondTitle {
+        font-size: 25px;
+    }
+
+}
+
+/* END RESPONSIVE CHANGES */
